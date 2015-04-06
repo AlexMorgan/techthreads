@@ -1,0 +1,17 @@
+<% if @signup.errors.any? %>
+  <p> There were errors in your submission </p>
+  <ul>
+    <% @signup.errors.each do |key, val| %>
+      <li><%= key.capitalize %> <%= val %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div id="splash-content">
+<h1 class="lg-title">TechThreads</h1>
+<h1 class="mantra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. </h1>
+
+<%= form_for @signup do |f| %>
+  <div><%= f.text_field :email, placeholder: "Enter your email", class: "signup" %></div>
+<% end %>
+</div>
