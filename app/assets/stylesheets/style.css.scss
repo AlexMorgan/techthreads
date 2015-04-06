@@ -1,3 +1,7 @@
+/* =============================================================================
+  SITE WIDE STYLES
+============================================================================= */
+
 * {
   margin: 0;
 }
@@ -7,16 +11,9 @@ html, body {
 body {
   font-family: 'Roboto', sans-serif;
 }
-
-.page-wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em;
-}
 .site-footer {
   background: #2ecc71;
-  border-bottom: 3px solid #27ae60;
+  border-bottom: 5px solid #27ae60;
   height: 100px;
 }
 
@@ -29,6 +26,7 @@ body {
 
 #panel {
   background: #95a5a6;
+  border-bottom: 5px solid #7f8c8d;
   padding: 10px;
   .menu {
     border-bottom: 2px solid #fff;
@@ -47,19 +45,6 @@ body {
   }
 }
 
-.navbar {
-  background: #34495e;
-  border: none;
-  padding: 15px;
-  a {
-    color: #fff !important;
-    font-weight: 100 !important;
-  }
-  .navbar-brand {
-    font-size: 1.5em;
-  }
-}
-
 .alert {
   border-radius: 0;
   text-align: center;
@@ -68,6 +53,11 @@ body {
       background: #e67e22;
     }
 }
+
+
+/* =============================================================================
+  SPLASH PAGE
+============================================================================= */
 
 #splash-content {
   margin-top: 20%;
@@ -90,9 +80,6 @@ body {
     border-radius: 2px;
   }
 }
-
-
-
 
 /* =============================================================================
   MENU TOGGLE SWITCHES
