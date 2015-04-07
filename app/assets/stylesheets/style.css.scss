@@ -12,9 +12,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .site-footer {
-  background: #2ecc71;
-  border-bottom: 5px solid #27ae60;
-  height: 100px;
+  background: rgb(236, 240, 241);
+  height: 35px;
 }
 
 #togglePanel {
@@ -25,8 +24,7 @@ body {
 }
 
 #panel {
-  background: #95a5a6;
-  border-bottom: 5px solid #7f8c8d;
+  background: #bdc3c7;
   padding: 10px;
   .menu {
     border-bottom: 2px solid #fff;
@@ -41,6 +39,10 @@ body {
       font-size: 1.5em;
       font-weight: 100;
       margin-bottom: 10px;
+      &:hover {
+        color: #3498db;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -54,6 +56,13 @@ body {
     }
 }
 
+.scotch-panel-canvas {
+  background-image: url(https://s3.amazonaws.com/techthreads/pages/techthreads-noblur.jpg);
+  background-size: 100%;
+  background-position: 37% 59%;
+  background-repeat: no-repeat;
+}
+
 
 /* =============================================================================
   SPLASH PAGE
@@ -64,10 +73,12 @@ body {
   text-align: center;
   .lg-title {
     font-weight: 500;
+    color: #fff;
   }
   .mantra {
     font-weight: 100;
     text-align: justify;
+    color: #fff;
   }
   .signup {
     width: 30%;
@@ -76,7 +87,7 @@ body {
     font-size: 1.6em;
     font-weight: 100;
     border: none;
-    background: #ecf0f1;
+    background: rgba(236, 240, 241, .75);
     border-radius: 2px;
   }
 }
@@ -124,7 +135,7 @@ body {
   left: 18px;
   right: 18px;
   height: 5px;
-  background-color: #34495e;
+  background-color: rgba(236, 240, 241,1.0);
 }
 
 .cmn-toggle-switch span::before,
@@ -135,7 +146,7 @@ body {
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: #34495e;
+  background-color: rgba(236, 240, 241,1.0);
   content: "";
 }
 
