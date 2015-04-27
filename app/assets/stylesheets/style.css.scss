@@ -69,7 +69,8 @@ body {
 ============================================================================= */
 
 #splash-content {
-  margin-top: 20%;
+  padding-top:10%;
+  padding-bottom: 50px;
   text-align: center;
   .lg-title {
     font-weight: 500;
@@ -80,6 +81,11 @@ body {
     text-align: justify;
     color: #fff;
   }
+}
+
+#splash-signup {
+  background: #fff;
+  text-align: center;
   .signup {
     width: 30%;
     height: 50px;
@@ -89,6 +95,23 @@ body {
     border: none;
     background: rgba(236, 240, 241, .75);
     border-radius: 2px;
+  }
+  .referrer-id {
+    visibility: hidden;
+  }
+  input[type="submit"] {
+    height: 50px;
+    background: #e67e22;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    position: relative;
+    bottom: 3px;
+    font-weight: 300;
+    padding: 0 20px;
+    &:hover {
+      background: #d35400;
+    }
   }
 }
 

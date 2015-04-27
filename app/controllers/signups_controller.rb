@@ -4,6 +4,7 @@ class SignupsController < ApplicationController
     @signup = Signup.new(signup_params)
     if @signup.save
       @signup.acquire_request_params(request)
+      @signup.create_referrer_id
       ## Make Usermailer to email individuals once they have signed up
       # UserMailer.contact_form
       redirect_to root_path, notice: "Thank you for believing in our mission"
@@ -17,6 +18,6 @@ class SignupsController < ApplicationController
   private
 
   def signup_params
-    params.require(:signup).permit(:email)
+    params.require(:signup).permit(:email, :referrer_id)
   end
 end

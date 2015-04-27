@@ -7,4 +7,10 @@ class Signup < ActiveRecord::Base
     self.ip_address = request.remote_ip
     self.save
   end
+
+  def create_referrer_id
+    referral_id = SecureRandom.hex(4)
+    self.referral_id = referral_id
+    self.save
+  end
 end

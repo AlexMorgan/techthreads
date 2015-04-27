@@ -10,9 +10,30 @@
 <div id="splash-content">
 <h1 class="lg-title">TechThreads</h1>
 <h1 class="mantra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. </h1>
-
-<%= form_for @signup do |f| %>
-  <div><%= f.text_field :email, placeholder: "Enter your email", class: "signup" %></div>
-<% end %>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<%= content_for :signup do %>
+  <%= form_for @signup do |f| %>
+    <%= f.text_field :referrer_id, class: "referrer-id"%>
+    <div>
+      <%= f.text_field :email, placeholder: "Enter your email", class: "signup" %>
+      <%= f.submit "Signup"%>
+    </div>
+  <% end %>
+<% end %>
+
+<script type="text/javascript">
+  var get = (function(){
+      var map = {};
+      location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, k, v){
+          map[k] = v;
+      });
+      return map;
+  }());
+
+  if (get.r_id) {
+    $('.referrer-id').val(get.r_id);
+    $('.referred-url').val(referredURL);
+  }
+</script>
