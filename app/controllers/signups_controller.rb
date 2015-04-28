@@ -2,7 +2,7 @@ class SignupsController < ApplicationController
 
   def create
     @signup = Signup.new(signup_params)
-    @signup.referrer_id = params['signup']['referrer_id']
+
     @signup.referred_url = params['signup']['referred_url']
 
     respond_to do |format|
