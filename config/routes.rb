@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#landing'
+  get 'pages/refer_a_friend'
 
   resources :signups, only: [:new, :create]
 

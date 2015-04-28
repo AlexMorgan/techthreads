@@ -84,8 +84,9 @@ body {
 }
 
 #splash-signup {
-  background: #fff;
+  background: #EDECEA;
   text-align: center;
+  height: 400px;
   .signup {
     width: 30%;
     height: 50px;
@@ -93,7 +94,7 @@ body {
     font-size: 1.6em;
     font-weight: 100;
     border: none;
-    background: rgba(236, 240, 241, .75);
+    background: rgb(236, 240, 241);
     border-radius: 2px;
   }
   .referrer-id {
@@ -112,6 +113,16 @@ body {
     &:hover {
       background: #d35400;
     }
+  }
+  h1 {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    color: #e67e22;
+    font-weight: 300;
+    font-size: 2em;
+  }
+  form {
+    margin-top: -10px;
   }
 }
 

@@ -1,4 +1,5 @@
 <% if @signup.errors.any? %>
+<% binding.pry %>
   <p> There were errors in your submission </p>
   <ul>
     <% @signup.errors.each do |key, val| %>
@@ -14,8 +15,8 @@
 
 
 <%= content_for :signup do %>
+  <h1>Be the first to slip into some TechThreads</h1>
   <%= form_for @signup do |f| %>
-    <%= f.text_field :referrer_id, class: "referrer-id"%>
     <div>
       <%= f.text_field :email, placeholder: "Enter your email", class: "signup" %>
       <%= f.submit "Signup"%>
@@ -24,16 +25,5 @@
 <% end %>
 
 <script type="text/javascript">
-  var get = (function(){
-      var map = {};
-      location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, k, v){
-          map[k] = v;
-      });
-      return map;
-  }());
-
-  if (get.r_id) {
-    $('.referrer-id').val(get.r_id);
-    $('.referred-url').val(referredURL);
-  }
+  referrerID = getReferrer();
 </script>

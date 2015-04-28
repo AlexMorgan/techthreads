@@ -2,17 +2,20 @@ class SignupsController < ApplicationController
 
   def create
     @signup = Signup.new(signup_params)
-    if @signup.save
-      @signup.acquire_request_params(request)
-      @signup.create_referrer_id
-      ## Make Usermailer to email individuals once they have signed up
-      # UserMailer.contact_form
-      redirect_to root_path, notice: "Thank you for believing in our mission"
-    else
-      flash[:notice] = "There were errors with your submission"
-      render "pages/landing"
-    end
+    @signup.referrer_id = params['signup']['referrer_id']
+    @signup.referred_url = params['signup']['referred_url']
 
+    respond_to do |format|
+      if @signup.save
+        @signup.acquire_request_params(request)
+        @signup.create_referrer_id
+        format.html { redirect_to :back, notice: "Thanks for believing in our mission" }
+        format.json { render json: {signup: @signup} }
+      else
+        format.html { redirect_to :back }
+        format.json { render json: @signup.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   private
