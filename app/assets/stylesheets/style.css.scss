@@ -97,9 +97,15 @@ body {
     background: rgb(236, 240, 241);
     border-radius: 2px;
   }
+
+  .fb-share{
+    margin-right: 10px;
+  }
+
   .referrer-id {
     visibility: hidden;
   }
+
   input[type="submit"] {
     height: 50px;
     background: #e67e22;
@@ -123,6 +129,21 @@ body {
   }
   form {
     margin-top: -10px;
+  }
+
+  #referral-content {
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  #referral-id-share {
+    height: 40px;
+    font-size: 1.2em;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
   }
 }
 
@@ -245,3 +266,4 @@ body {
   -webkit-transition-delay: 0, 0.3s;
           transition-delay: 0, 0.3s;
 }
+
