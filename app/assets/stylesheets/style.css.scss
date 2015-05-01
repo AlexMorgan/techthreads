@@ -95,7 +95,7 @@ body {
     font-weight: 100;
     border: none;
     background: #fff;
-    border-radius: 2px;
+    border-radius: 2px 0 0 2px;
   }
 
   .fb-share{
@@ -110,12 +110,13 @@ body {
     height: 50px;
     background: #e67e22;
     border: none;
-    border-radius: 2px;
+    border-radius: 0px 2px 2px 0;
     color: #fff;
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
     font-weight: 300;
     padding: 0 20px;
+    margin-left: -3px;
     &:hover {
       background: #d35400;
     }
@@ -129,6 +130,10 @@ body {
   }
   form {
     margin-top: -10px;
+
+    .error {
+      color: #e74c3c;
+    }
   }
 
   #referral-content {

@@ -21,6 +21,9 @@
       <div>
         <%= f.text_field :email, placeholder: "Enter your email", class: "signup" %>
         <%= f.submit "Signup"%>
+        <div id="error-msg">
+          <p class="error"></p>
+        </div>
       </div>
     <% end %>
   </div>
