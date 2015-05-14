@@ -10,13 +10,13 @@
 
 <div id="splash-content">
 <h1 class="lg-title">TechThreads</h1>
-<h1 class="mantra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. </h1>
+<h1 class="mantra">Make a donation to support startup communities &amp; entrepreneurs around the world. Get exclusive merch from the hottest startups!. </h1>
 </div>
 
 
 <%= content_for :signup do %>
   <div id="signup-content">
-    <h1>Be the first to slip into TechThreads</h1>
+    <!-- <h1>Be the first to slip into TechThreads</h1> -->
     <%= form_for @signup do |f| %>
       <div>
         <%= f.text_field :email, placeholder: "Enter your email", class: "signup" %>
@@ -26,6 +26,7 @@
         </div>
       </div>
     <% end %>
+    <div class="arrow"></div>
   </div>
 
   <div id="referral-content" hidden>
