@@ -76,24 +76,34 @@ body {
 ============================================================================= */
 
 #splash-content {
-  padding-top:20%;
+  padding-top: 10%;
   padding-bottom: 20%;
   text-align: center;
   .lg-title {
+    display: inline-block;
+    background: rgba(140, 145, 149, 1);
+    padding: 10px;
     font-weight: 500;
     color: #fff;
+    margin-bottom: 50px
   }
   .mantra {
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     color: #fff;
+  }
+  p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-top: 25px;
   }
 }
 
 #splash-signup {
-  background: #EDECEA;
+  background: #fff;
   text-align: center;
-  height: 400px;
+  /*height: 400px;*/
   position: relative;
 
   #signup-content {
@@ -167,7 +177,8 @@ body {
     margin-top: -10px;
 
     .error {
-      color: #e74c3c;
+      margin-top: 10px;
+      color: #fff;
     }
   }
 
