@@ -4,7 +4,7 @@
 $brand-color: #02BFB8;
 $brand-dim: #03a8a0;
 $grey: #8c9195;
-
+$navy: #31383e;
 /* =============================================================================
   SITE WIDE STYLES
 ============================================================================= */
@@ -218,6 +218,8 @@ body {
 
       &.by-entre {
         margin-top: 100px;
+        position: relative;
+        z-index: 10;
       }
 
       .dot {
@@ -287,10 +289,17 @@ body {
 
       &.coffee {
         background-image: url(https://s3.amazonaws.com/techthreads/pages/coffee1.jpg);
+        box-shadow: 0 4px 2px -2px rgb(48, 48, 48);
+        position: relative;
+        z-index: 9;
       }
     }
   }
-
+  footer {
+    height: 100px;
+    background: $navy;
+    /*border-top: 5px solid #2a3035;*/
+  }
 }
 
 /* =============================================================================

@@ -17,8 +17,7 @@
 </div>
 </div>
 
-
-<%= content_for :signup do %>
+<div id="splash-signup">
   <div id="signup-content">
     <!-- <h1>Be the first to slip into TechThreads</h1> -->
     <%= form_for @signup do |f| %>
@@ -113,10 +112,12 @@
       <h1 class="title">To Entrepreneurs</h1>
       <h1 class="quote">"The Grind Foundation is committed to lowering the barriers to entry for enabling the next wave of entrepreneurs to change the world and make a lasting impact."</h1>
     </div>
-
   </div> <!-- .details-content -->
 
-<% end %> <!-- :signup -->
+  <footer>
+    <div class="container"></div>
+  </footer>
+</div> <!-- #splash-signup -->
 
 <script type="text/javascript">
   referrerID = getReferrer();
