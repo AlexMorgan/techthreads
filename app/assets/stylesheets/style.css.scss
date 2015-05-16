@@ -3,7 +3,7 @@
 ============================================================================= */
 $brand-color: #02BFB8;
 $brand-dim: #03a8a0;
-
+$grey: #8c9195;
 
 /* =============================================================================
   SITE WIDE STYLES
@@ -104,6 +104,7 @@ body {
 #splash-signup {
   background: #fff;
   text-align: center;
+  border-top: 5px solid #8c9195;
 
   #signup-content {
     display: inline-block;
@@ -111,6 +112,14 @@ body {
     position: relative;
     top: -130px;
     padding: 40px 50px;
+
+    h1 {
+      padding-top: 50px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 300;
+      font-size: 2em;
+    }
   }
 
   .arrow {
@@ -165,13 +174,6 @@ body {
     visibility: hidden;
   }
 
-  h1 {
-    padding-top: 50px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 2em;
-  }
   form {
     margin-top: -10px;
 
@@ -195,6 +197,56 @@ body {
     margin-bottom: 10px;
     border: none;
   }
+
+  .details-content {
+    margin-top: -50px;
+
+    .detail {
+      padding-bottom: 50px;
+
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      .dot {
+        background: #02bfb8;
+        border-radius: 150px;
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        position: relative;
+        bottom: -72px;
+        border: 5px solid #fff;
+      }
+
+      .tout {
+        text-align: center;
+        padding: 0 30px;
+
+        h2 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1.15em;
+        }
+
+        .placeholder {
+          background: $brand-color;
+          border-radius: 150px;
+          height: 100px;
+          width: 100px;
+          display: inline-block;
+        }
+      }
+    }
+
+    #grey-filler {
+      height: 200px;
+      background: $grey;
+    }
+  }
+
 }
 
 /* =============================================================================
