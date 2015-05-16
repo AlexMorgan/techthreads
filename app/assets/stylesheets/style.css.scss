@@ -241,9 +241,25 @@ body {
       }
     }
 
-    #grey-filler {
-      height: 200px;
+    #quote-tout {
       background: $grey;
+      background-image: url(https://s3.amazonaws.com/techthreads/pages/sparks1.jpg);
+      background-size: 100%;
+      background-position: 20px;
+      padding: 125px 20%;
+
+      .quote {
+        font-size: 2em;
+        color: #fff;
+        font-weight: 300;
+      }
+
+      .quoter {
+        font-size: 1.75em;
+        font-weight: 300;
+        float: right;
+        color: #fff;
+      }
     }
   }
 
