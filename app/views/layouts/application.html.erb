@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Facebook OG Info -->
+  <meta property="og:title" content="Build Entrepreneurship Worldwide" />
+  <meta property="og:site_name" content="The Grind Foundation"/>
+  <meta property="og:description" content="Make a donation to support startup communities &amp; entrepreneurs around the world. Get exclusive merch from the hottest startups."/>
+  <meta property="og:image" content="https://s3.amazonaws.com/techthreads/pages/techthreads.jpg">
+  <meta property="og:url"content="https://soe.herokuapp.com/" />
+
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -14,6 +22,24 @@
   <script src="//load.sumome.com/" data-sumo-site-id="87403264d881000172a3acd60f9a43c6efb68db5c87e1578dc169e28cc9c6a84" async="async"></script>
 </head>
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '812606228816454',
+        xfbml      : true,
+        version    : 'v2.3'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
     <div class="item" id="togglePanel">
       <button class="cmn-toggle-switch cmn-toggle-switch__htx">
         <span>toggle menu</span>
