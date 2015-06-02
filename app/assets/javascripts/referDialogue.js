@@ -3,7 +3,9 @@ function formatReferDialogue(path) {
     $('#referral-content').fadeIn(400);
     $('#referral-id-share').val(path);
     var twHref = "https://twitter.com/share?text=Check out TechThreads. A startup looking to reinvent the way we wear tech&url=" + path;
-    $('.tw-share').attr('href', twHref)
+    var fbHref = "http://www.facebook.com/share.php?u=" + path + ""
+    $('#tw-share').attr('href', twHref)
+    $('#fb-share').attr('href', fbHref)
   });
 }
 

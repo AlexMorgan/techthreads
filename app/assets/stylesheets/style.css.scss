@@ -197,6 +197,14 @@ body {
     h1 {
       margin-bottom: 10px;
     }
+
+    .share-section {
+      padding-top: 10px;
+      i {
+        font-size: 2em;
+        margin: 10px;
+      }
+    }
   }
 
   #referral-id-share {
@@ -225,7 +233,7 @@ body {
       }
 
       .dot {
-        background: #02bfb8;
+        background: $brand-color;
         border-radius: 150px;
         height: 35px;
         width: 35px;
